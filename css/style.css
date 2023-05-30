@@ -1,0 +1,63 @@
+body {
+    background-color: #2e5be8 !important;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+#input-value {
+    background-color: #2e5be8 !important;
+}
+
+#input-value::placeholder {
+    color: rgb(167, 163, 163) !important;
+
+}
+
+#input-value:focus {
+    outline: none;
+}
+
+.feels-like {
+    color: #7fc0ff;
+}
+
+.deg {
+    font-size: 1rem;
+    font-weight: 20rem !important;
+}
+
+.weather-text {
+    color: #a9e1fe;
+    width: 25rem;
+}
+
+.temperature {
+    font-size: 4rem !important;
+}
+
+.deg2 {
+    font-size: 1rem;
+    font-weight: 20rem !important;
+    margin-top: -2rem;
+}
+
+.hide {
+    display: none;
+}
+
+#weather-img {
+    height: 12rem;
+}
+
+.icon {
+    height: 2rem;
+}
+
+@media (min-width:1000px) {
+    .icon {
+        height: 4rem;
+    }
+
+    #input-value {
+        width: 30rem !important;
+    }
+}
