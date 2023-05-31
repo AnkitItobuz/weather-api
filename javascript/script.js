@@ -4,16 +4,13 @@ const temperature = document.querySelector(".temperature");
 const feelsLike = document.querySelector(".feels-like");
 const inputValue = document.getElementById("input-value");
 
-
 let inputTextValue = "hi";
 inputValue.addEventListener("keyup", (e) => {
     inputTextValue = e.target.value;
 
     if (e.key === "Enter") {
-        console.log(inputTextValue);
         getData();
     }
-
 });
 
 async function getData() {
@@ -22,7 +19,6 @@ async function getData() {
     ).then((data) => data.json());
     try {
 
-        console.log(data);
         locationHead.innerHTML = inputTextValue;
         locationHead.style.textTransform = "capitalize";
 
@@ -43,12 +39,13 @@ async function getData() {
 
         document.querySelector(".hide").style.display = "block";
     }
+
     catch (error) {
         document.getElementById("weather-img").src = "./images/cloud.png";
         temperature.innerHTML = 'No Data Found';
         feelsLike.innerHTML = "";
         document.querySelector(".hide").style.display = "none";
-
     }
+
     inputValue.value = "";
 }

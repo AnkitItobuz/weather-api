@@ -9,7 +9,6 @@ body {
 
 #input-value::placeholder {
     color: rgb(167, 163, 163) !important;
-
 }
 
 #input-value:focus {
