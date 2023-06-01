@@ -18,7 +18,7 @@ async function getData() {
         `http://api.weatherapi.com/v1/current.json?key=0c80b2b56f1943ada19100744230103&q=${inputTextValue}&aqi=no`
     ).then((data) => data.json());
     try {
-
+        weatherImage.style.display="block";
         locationHead.innerHTML = inputTextValue;
         locationHead.style.textTransform = "capitalize";
 
